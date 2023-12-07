@@ -1,0 +1,368 @@
+/* CSS Document */
+
+/* Setzt das Zeichenkodierungsschema auf UTF-8 */
+@charset "utf-8";
+
+
+
+/* ------------------------------------------------------------------------ Allgemeine Stile */
+/* Allgemeine Stildefinitionen für den gesamten Körper der Webseite */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    cursor: url('../img/custom-cursor.png'), auto; /* Benutzerdefinierter Cursor */
+}
+
+/* Hauptcontainer-Stil mit zentrierter Ausrichtung und Begrenzung auf 1200px Breite */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10%;
+}
+
+/* Stil für den Header-Bereich mit schwarzer Hintergrundfarbe und oberen Abstand */
+header {
+    background-color: black;
+    padding: 10px 0;
+}
+
+/* Stil für den Header-Bereich mit schwarzer Hintergrundfarbe, oberem Abstand und Positionierung */
+.header {
+    background-color: black;
+    padding: 10px 0;
+    position: relative;
+}
+
+
+
+/* ------------------------------------------------------------------------ Stile für Navigationspunkte */
+/* Stil für die Navigationsleiste mit weißem Text, rechter Ausrichtung und benutzerdefiniertem Cursor */
+.nav {
+    color: white;
+    text-align: right;
+    margin-right: 25px;
+    margin-top: -50px;
+    font-size: 20px;
+    font-family: 'Impact', sans-serif;
+    cursor: url('../img/custom-cursor.png'), auto;
+}
+
+/* Stil für die Navigationsleiste, Liste und Links */
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Effekt bei Hover auf Navigationslink */
+.nav a:hover {
+    color: #c4b69f;
+}
+
+/* Aktiver Navigationslink-Stil */
+.nav a.active {
+    color: #715c4c;
+    text-decoration: underline;
+}
+
+/* Stil für das Logo-Element */
+.logo-item {
+    float: left;
+    margin-right: 25px;
+}
+
+/* Stil für den rechten Teil der Navigation */
+.nav-right {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right li {
+    display: inline;
+}
+
+
+
+/* ------------------------------------------------------------------------ Stile für das Burger-Menü */
+/* Stil für das Burger-Menü-Icon */
+.burger-menu {
+    padding: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Stil für das Burger-Menü mit transparentem Hintergrund und rechter Ausrichtung */
+.burger-nav {
+    background-color: rgba(0, 0, 0, 0.606);
+    text-align: right;
+    font-size: 20px;
+    padding: 5px 20px;
+    font-family: 'Impact', sans-serif;
+}
+
+/* Stil für das Burger-Menü, Liste und Links */
+.burger-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.burger-nav li {
+    margin-left: 10px;
+}
+
+.burger-nav a {
+    color: white;
+    line-height: 1.8;
+    text-decoration: none;
+    cursor: url('../img/custom-cursor.png'), auto;
+}
+
+/* Effekt bei Hover auf Burger-Menü-Link */
+.burger-nav a:hover {
+    color: #c4b69f;
+}
+
+/* Aktiver Burger-Menü-Link-Stil */
+.burger-nav a.active {
+    color: #715c4c;
+    text-decoration: underline;
+}
+
+/* Stil für das Burger-Menü-Icon mit benutzerdefiniertem Cursor */
+.burger-icon {
+    cursor: url('../img/custom-cursor.png'), auto;
+    padding: 20px;
+}
+
+/* Stil für die Balken im Burger-Menü-Icon */
+.bar1, .bar2 {
+    width: 30px;
+    height: 3px;
+    background-color: #715c4c;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Animationseffekte für die Balken im geöffneten Burger-Menü */
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+/* ------------------------------------------------------------------------ Stile für Textabschnitte */
+/* Stil für Textbereiche mit zentrierter Ausrichtung */
+.text {
+    display: flex;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+/* Stil für den Titelbereich mit oberem Abstand */
+.titel {
+    margin-top: 5%;
+}
+
+/* Allgemeiner Stil für Absatztexte */
+p {
+    font-family: futura;
+    color: #88898b;
+    padding-bottom: 50px;
+    font-size: 18px;
+
+    /* Media Query für kleinere Bildschirme */
+    @media only screen and (max-width: 600px) {
+        font-size: 14px;
+    }
+}
+
+/* Stil für Überschriften h1 und h2 */
+h1, h2 {
+    font-family: Impact;
+    color: #c4b69f;
+    font-size: 42px;
+    padding-top: 50px;
+    padding-bottom: 0;
+
+    /* Media Query für kleinere Bildschirme */
+    @media only screen and (max-width: 600px) {
+        font-size: 32px;
+    }
+}
+
+/* Stil für Überschrift h3 */
+h3 {
+    font-family: futura;
+    color: #715c4c;
+    font-size: 18px;
+    line-height: 1.8;
+
+    /* Media Query für kleinere Bildschirme */
+    @media only screen and (max-width: 600px) {
+        font-size: 14px;
+    }
+}
+
+/* Stil für Überschrift h4 */
+h4 {
+    font-family: futura;
+    color: #88898b;
+    font-size: 12px;
+
+    /* Media Query für kleinere Bildschirme */
+    @media only screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+
+
+/* ------------------------------------------------------------------------ Stile für den Footer */
+/* Stil für den Fußbereich der Seite */
+footer {
+    padding-top: 5%;
+    margin-top: 5%;
+    height: 10em;
+    background-color: #212125;
+}
+
+/* Stil für den inneren Bereich des Fußbereichs */
+.footer {
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+
+/* ------------------------------------------------------------------------ Stile für Grafiken und Bilder */
+/* Allgemeine Stildefinitionen für Bilder */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Stil für zentrierte Bilder */
+.img-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* Stil für das Kontaktbild */
+.img-kontakt {
+    max-width: 20%;
+    height: auto;
+}
+
+/* Stil für den Container mit flexiblen Elementen */
+.container {
+    display: flex;
+}
+
+/* Stil für einzelne Elemente im Container */
+.element {
+    flex: 1;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+
+/* ------------------------------------------------------------------------ Stile für die Color Palette */
+/* Stil für farbige Boxen mit responsivem Verhalten */
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Media Query für kleinere Bildschirme (max-width: 720px) */
+@media only screen and (max-width: 720px) {
+    .color-box {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Media Query für kleinere Bildschirme (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    .color-box {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+/* ------------------------------------------------------------------------ Media Queries */
+/* Media Query für mittelgroße Bildschirme (max-width: 1000px) */
+@media only screen and (max-width: 1000px) {
+    /* Ändert die Anzeige der Container und begrenzt die Breite der Elemente */
+    .container {
+        display: block;
+    }
+
+    .element {
+        flex: none;
+        max-width: 400px;
+        margin: 5px;
+    }
+}
+
+/* Media Query für kleinere Bildschirme (max-width: 800px) */
+@media only screen and (max-width: 800px) {
+    /* Versteckt die Hauptnavigation und zeigt das Burger-Menü an */
+    .nav {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .burger-nav {
+        display: block;
+    }
+}
+
+/* Media Query für größere Bildschirme (min-width: 801px) */
+@media only screen and (min-width: 801px) {
+    /* Versteckt das Burger-Menü für größere Bildschirme */
+    .burger-menu {
+        display: none;
+    }
+
+    .burger-nav {
+        display: none;
+    }
+}
